@@ -35,24 +35,32 @@
         .delay-200 { transition-delay: 200ms; }
         .delay-300 { transition-delay: 300ms; }
         
-        /* Gradiente sutil para textos de destaque */
+        /* Gradiente Azul Tecnológico para textos de destaque */
         .text-gradient {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(90deg, #ffffff, #a3a3a3);
+            background-image: linear-gradient(90deg, #60a5fa, #2563eb);
+        }
+        
+        /* Sombra especial para destacar o botão de compra */
+        .glow-button {
+            box-shadow: 0 0 25px rgba(37, 99, 235, 0.4);
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 35px rgba(37, 99, 235, 0.6);
         }
     </style>
 </head>
-<body class="bg-neutral-50 text-neutral-900 selection:bg-neutral-900 selection:text-white pb-20 md:pb-0">
+<body class="bg-neutral-50 text-neutral-900 selection:bg-blue-600 selection:text-white pb-20 md:pb-0">
 
-    <!-- Header Minimalista (Sem distrações, apenas Autoridade) -->
+    <!-- Header Minimalista -->
     <header class="fixed w-full z-50 transition-all duration-300 py-4 bg-black/90 backdrop-blur-md border-b border-white/10 text-white">
         <div class="container mx-auto px-6 max-w-5xl flex justify-between items-center">
             <div class="text-lg font-bold tracking-tighter uppercase">
-                GCRV<span class="text-neutral-500">.</span>
+                GCRV<span class="text-blue-500">.</span>
             </div>
-            <a href="#checkout" class="hidden md:inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase hover:text-neutral-400 transition-colors">
+            <a href="https://pay.hotmart.com/M104574073Y" target="_blank" class="hidden md:inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-blue-400 hover:text-blue-300 transition-colors">
                 Garantir meu acesso <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
         </div>
@@ -61,14 +69,14 @@
     <!-- 1. HERO SECTION -->
     <section class="relative min-h-[90vh] flex flex-col justify-center px-6 pt-24 overflow-hidden bg-black text-white">
         <div class="absolute inset-0 z-0">
-            <!-- Imagem de fundo abstrata tech/código, escurecida para foco no texto -->
+            <!-- Imagem de fundo abstrata tech/código -->
             <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover opacity-20 grayscale mix-blend-overlay">
             <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black to-black"></div>
         </div>
 
         <div class="container mx-auto max-w-4xl relative z-10 text-center">
             <div class="reveal">
-                <span class="inline-block py-1 px-3 rounded-full border border-neutral-700 bg-neutral-900/50 text-neutral-300 text-xs font-bold uppercase tracking-widest mb-6">
+                <span class="inline-block py-1 px-3 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
                     Do Zero ao Avançado
                 </span>
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6">
@@ -79,19 +87,19 @@
             
             <div class="reveal delay-100">
                 <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-                    O método exato e as estratégias práticas que eu uso para escalar automações operacionais e criar agentes de vendas lucrativos. Chega de prompts superficiais, construa um sistema real.
+                    O método exato e as estratégias práticas que eu uso para escalar automações operacionais e criar agentes de vendas lucrativos. <strong class="text-white font-medium">Chega de prompts superficiais, construa um sistema real.</strong>
                 </p>
             </div>
 
             <div class="reveal delay-200 flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="#checkout" class="w-full sm:w-auto bg-white text-black px-10 py-5 text-base font-bold tracking-widest uppercase hover:bg-neutral-200 hover:scale-[1.02] transition-all flex items-center justify-center gap-3">
+                <a href="https://pay.hotmart.com/M104574073Y" target="_blank" class="w-full sm:w-auto bg-blue-600 text-white px-10 py-5 text-base font-bold tracking-widest uppercase hover:bg-blue-700 hover:scale-[1.02] glow-button transition-all flex items-center justify-center gap-3 rounded-sm">
                     Quero Monetizar com IA
                     <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </a>
             </div>
             
             <div class="reveal delay-300 mt-8 flex items-center justify-center gap-2 text-sm text-neutral-500">
-                <i data-lucide="shield-check" class="w-4 h-4"></i> Pagamento 100% Seguro via Hotmart
+                <i data-lucide="shield-check" class="w-4 h-4 text-blue-500"></i> Pagamento 100% Seguro via Hotmart
             </div>
         </div>
     </section>
@@ -100,23 +108,23 @@
     <section class="py-24 px-6 bg-white">
         <div class="container mx-auto max-w-4xl">
             <div class="reveal text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-6">O Hype passou. A execução começou.</h2>
+                <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-6">O Hype passou. <span class="text-blue-600">A execução começou.</span></h2>
                 <p class="text-xl text-neutral-600 font-light">Se você ainda usa a Inteligência Artificial apenas para reescrever e-mails ou criar imagens bonitas, você está deixando muito dinheiro na mesa.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="reveal bg-neutral-50 p-10 border border-neutral-200">
+                <div class="reveal bg-neutral-50 p-10 border border-neutral-200 rounded-sm">
                     <i data-lucide="x-circle" class="w-10 h-10 text-neutral-400 mb-6"></i>
                     <h3 class="text-xl font-bold mb-4">A Ilusão dos "Prompts Mágicos"</h3>
                     <p class="text-neutral-600 leading-relaxed">
                         A internet está cheia de conteúdo superficial. Dicas soltas que não se conectam não constroem um negócio real. Você consome horas de conteúdo, mas não sabe como empacotar isso em algo que os clientes realmente comprem.
                     </p>
                 </div>
-                <div class="reveal delay-100 bg-black text-white p-10 shadow-2xl transform md:-translate-y-4">
-                    <i data-lucide="check-circle-2" class="w-10 h-10 text-white mb-6"></i>
+                <div class="reveal delay-100 bg-black text-white p-10 shadow-2xl transform md:-translate-y-4 border-t-4 border-blue-600 rounded-sm">
+                    <i data-lucide="check-circle-2" class="w-10 h-10 text-blue-500 mb-6"></i>
                     <h3 class="text-xl font-bold mb-4">O Foco em Sistemas (Onde está o dinheiro)</h3>
                     <p class="text-neutral-300 leading-relaxed">
-                        A verdadeira escala está em criar sistemas. Automatizar o que é repetitivo, conectar ferramentas (como n8n) e criar Agentes Comerciais autônomos. Quem pensa em sistemas, ganha muito mais do que quem faz tarefas manuais.
+                        A verdadeira escala está em criar sistemas. Automatizar o que é repetitivo, conectar ferramentas (como n8n) e criar Agentes Comerciais autônomos. <strong class="text-white">Quem pensa em sistemas, ganha muito mais do que quem faz tarefas manuais.</strong>
                     </p>
                 </div>
             </div>
@@ -127,57 +135,57 @@
     <section class="py-24 px-6 bg-neutral-950 text-white">
         <div class="container mx-auto max-w-5xl">
             <div class="reveal mb-16 md:text-center max-w-3xl mx-auto">
-                <span class="text-neutral-500 font-bold tracking-widest uppercase text-sm mb-2 block">O Mapa Estratégico</span>
+                <span class="text-blue-500 font-bold tracking-widest uppercase text-sm mb-2 block">O Mapa Estratégico</span>
                 <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-6">O que você vai dominar neste eBook</h2>
                 <p class="text-neutral-400 text-lg">IA é a maior alavanca de renda da década. Este não é um livro de teoria, é um manual técnico e estratégico. Aqui está o seu plano de ação:</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-800 border border-neutral-800">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-800 border border-neutral-800 rounded-sm overflow-hidden">
                 <!-- Card 1 -->
                 <div class="reveal bg-neutral-900 p-8 hover:bg-neutral-800 transition-colors group">
-                    <i data-lucide="pen-tool" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-white transition-colors"></i>
+                    <i data-lucide="pen-tool" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-blue-500 transition-colors"></i>
                     <h4 class="text-lg font-bold mb-3">Copy & Textos</h4>
                     <p class="text-neutral-400 text-sm leading-relaxed">Engenharia de prompts avançada com ChatGPT e Claude para criar cartas de vendas e conteúdos magnéticos.</p>
                 </div>
                 <!-- Card 2 -->
                 <div class="reveal delay-100 bg-neutral-900 p-8 hover:bg-neutral-800 transition-colors group">
-                    <i data-lucide="image" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-white transition-colors"></i>
+                    <i data-lucide="image" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-blue-500 transition-colors"></i>
                     <h4 class="text-lg font-bold mb-3">Criativos & Vídeos</h4>
                     <p class="text-neutral-400 text-sm leading-relaxed">Domine Midjourney e IAs geradoras de vídeo para criar anúncios de alta conversão sem precisar de estúdio.</p>
                 </div>
                 <!-- Card 3 -->
                 <div class="reveal delay-200 bg-neutral-900 p-8 hover:bg-neutral-800 transition-colors group">
-                    <i data-lucide="layout" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-white transition-colors"></i>
+                    <i data-lucide="layout" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-blue-500 transition-colors"></i>
                     <h4 class="text-lg font-bold mb-3">Sites e Funis</h4>
                     <p class="text-neutral-400 text-sm leading-relaxed">Estruturação acelerada de páginas de vendas e landing pages utilizando assistência de IA.</p>
                 </div>
                 <!-- Card 4 -->
                 <div class="reveal delay-300 bg-neutral-900 p-8 hover:bg-neutral-800 transition-colors group">
-                    <i data-lucide="workflow" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-white transition-colors"></i>
-                    <h4 class="text-lg font-bold mb-3">Automação (n8n)</h4>
+                    <i data-lucide="workflow" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-blue-500 transition-colors"></i>
+                    <h4 class="text-lg font-bold mb-3 text-blue-400">Automação (n8n)</h4>
                     <p class="text-neutral-400 text-sm leading-relaxed">O coração da operação. Como integrar sistemas e criar fluxos que trabalham por você 24/7.</p>
                 </div>
                 <!-- Card 5 -->
                 <div class="reveal bg-neutral-900 p-8 hover:bg-neutral-800 transition-colors group">
-                    <i data-lucide="bot" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-white transition-colors"></i>
-                    <h4 class="text-lg font-bold mb-3">Agentes de Vendas</h4>
+                    <i data-lucide="bot" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-blue-500 transition-colors"></i>
+                    <h4 class="text-lg font-bold mb-3 text-blue-400">Agentes de Vendas</h4>
                     <p class="text-neutral-400 text-sm leading-relaxed">Como desenvolver e treinar agentes automáticos que atendem, qualificam e vendem pelo WhatsApp.</p>
                 </div>
                 <!-- Card 6 -->
                 <div class="reveal delay-100 bg-neutral-900 p-8 hover:bg-neutral-800 transition-colors group">
-                    <i data-lucide="briefcase" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-white transition-colors"></i>
+                    <i data-lucide="briefcase" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-blue-500 transition-colors"></i>
                     <h4 class="text-lg font-bold mb-3">Venda para B2B</h4>
                     <p class="text-neutral-400 text-sm leading-relaxed">O modelo de negócios para empacotar essas soluções de IA e vender para empresas reais com alto ticket.</p>
                 </div>
                 <!-- Card 7 -->
                 <div class="reveal delay-200 bg-neutral-900 p-8 hover:bg-neutral-800 transition-colors group">
-                    <i data-lucide="box" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-white transition-colors"></i>
+                    <i data-lucide="box" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-blue-500 transition-colors"></i>
                     <h4 class="text-lg font-bold mb-3">Criação de SaaS</h4>
                     <p class="text-neutral-400 text-sm leading-relaxed">Os princípios para construir seu próprio software/aplicativo baseado em IA (Micro-SaaS).</p>
                 </div>
                 <!-- Card 8 -->
                 <div class="reveal delay-300 bg-neutral-900 p-8 hover:bg-neutral-800 transition-colors group">
-                    <i data-lucide="trending-up" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-white transition-colors"></i>
+                    <i data-lucide="trending-up" class="w-8 h-8 mb-6 text-neutral-500 group-hover:text-blue-500 transition-colors"></i>
                     <h4 class="text-lg font-bold mb-3">Escala de Renda</h4>
                     <p class="text-neutral-400 text-sm leading-relaxed">Como gerenciar múltiplas fontes de renda criadas através de ecossistemas automatizados.</p>
                 </div>
@@ -186,7 +194,7 @@
             <!-- 6. DIFERENCIAL -->
             <div class="reveal mt-16 text-center">
                 <p class="text-xl font-medium text-neutral-300 max-w-2xl mx-auto">
-                    Não é teoria. Não é hype. <br class="md:hidden"/> <span class="text-white font-bold border-b-2 border-white pb-1">É mentalidade + ferramentas + estratégia comercial pura.</span>
+                    Não é teoria. Não é hype. <br class="md:hidden"/> <span class="text-blue-400 font-bold border-b-2 border-blue-500 pb-1">É mentalidade + ferramentas + estratégia comercial pura.</span>
                 </p>
             </div>
         </div>
@@ -199,30 +207,30 @@
                 
                 <div class="relative order-2 lg:order-1">
                     <div class="reveal">
-                        <img src="https://i.ibb.co/C5JDPTTd/gabriela-carvalho.jpg" alt="Gabriela Carvalho" class="w-full max-w-md mx-auto object-cover grayscale contrast-125 shadow-2xl" style="max-height: 500px;">
+                        <img src="https://i.ibb.co/C5JDPTTd/gabriela-carvalho.jpg" alt="Gabriela Carvalho" class="w-full max-w-md mx-auto object-cover grayscale contrast-125 shadow-2xl rounded-sm" style="max-height: 500px;">
                         <!-- Selo de Especialista flotante -->
-                        <div class="absolute -bottom-6 -right-6 md:right-0 bg-black text-white p-6 shadow-xl hidden md:block">
+                        <div class="absolute -bottom-6 -right-6 md:right-0 bg-blue-600 text-white p-6 shadow-xl hidden md:block rounded-sm">
                             <p class="font-bold text-2xl mb-1">+100 Projetos</p>
-                            <p class="text-xs uppercase tracking-widest text-neutral-400">Desenvolvidos e Escalados</p>
+                            <p class="text-xs uppercase tracking-widest text-blue-200">Desenvolvidos e Escalados</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="order-1 lg:order-2">
                     <div class="reveal">
-                        <h2 class="text-sm font-bold tracking-widest text-neutral-400 uppercase mb-4">Por que aprender comigo?</h2>
+                        <h2 class="text-sm font-bold tracking-widest text-blue-600 uppercase mb-4">Por que aprender comigo?</h2>
                         <h3 class="text-3xl md:text-5xl font-bold tracking-tight mb-8">Gabriela Carvalho</h3>
                         <p class="text-neutral-600 text-lg leading-relaxed mb-6">
                             Formada em Análise e Desenvolvimento de Sistemas, atuo há mais de 4 anos no mercado estruturando ecossistemas digitais. 
                         </p>
                         <p class="text-neutral-600 text-lg leading-relaxed mb-8">
-                            Decidi escrever este material por um motivo simples: estou cansada de ver profissionais ensinando o que não aplicam. Tudo o que está neste eBook é baseado no que eu construí: **automações operacionais reais, agentes de venda autônomos integrados a CRM e fluxos inteligentes para empresas.**
+                            Decidi escrever este material por um motivo simples: estou cansada de ver profissionais ensinando o que não aplicam. Tudo o que está neste eBook é baseado no que eu construí: <strong class="text-neutral-900">automações operacionais reais, agentes de venda autônomos integrados a CRM e fluxos inteligentes para empresas.</strong>
                         </p>
                         
-                        <div class="bg-neutral-50 border border-neutral-200 p-8">
-                            <h4 class="font-bold text-lg mb-4 text-black">A Lógica é Simples:</h4>
-                            <p class="text-neutral-600 text-sm leading-relaxed">
-                                Se eu consegui escalar automações complexas e desenvolver robôs comerciais do zero utilizando essas exatas ferramentas, <strong class="text-black">qualquer pessoa dedicada consegue aprender através de um método estruturado passo a passo.</strong> Sem exageros. Apenas execução direcionada.
+                        <div class="bg-blue-50/50 border border-blue-100 p-8 rounded-sm">
+                            <h4 class="font-bold text-lg mb-4 text-blue-900">A Lógica é Simples:</h4>
+                            <p class="text-blue-900/80 text-sm leading-relaxed">
+                                Se eu consegui escalar automações complexas e desenvolver robôs comerciais do zero utilizando essas exatas ferramentas, <strong class="text-blue-700">qualquer pessoa dedicada consegue aprender através de um método estruturado passo a passo.</strong> Sem exageros. Apenas execução direcionada.
                             </p>
                         </div>
                     </div>
@@ -236,45 +244,45 @@
     <section id="checkout" class="py-24 px-6 bg-black text-white text-center">
         <div class="container mx-auto max-w-3xl">
             <div class="reveal">
-                <i data-lucide="lock" class="w-12 h-12 text-neutral-500 mx-auto mb-6"></i>
+                <i data-lucide="lock" class="w-12 h-12 text-blue-500 mx-auto mb-6"></i>
                 <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
                     Comece agora a construir sua renda com IA
                 </h2>
                 <p class="text-xl text-neutral-400 font-light mb-12">
-                    Garanta acesso imediato ao eBook completo <strong>"Como Ganhar Dinheiro com IA em 2026 — Do Zero ao Avançado"</strong> e ao plano de ação prático.
+                    Garanta acesso imediato ao eBook completo <strong class="text-white">"Como Ganhar Dinheiro com IA em 2026 — Do Zero ao Avançado"</strong> e ao plano de ação prático.
                 </p>
 
                 <!-- Box de Compra -->
-                <div class="bg-neutral-900 border border-neutral-800 p-8 md:p-12 shadow-2xl relative">
+                <div class="bg-neutral-900 border border-neutral-800 p-8 md:p-12 shadow-2xl relative rounded-sm">
                     <!-- Detalhes Produto -->
                     <div class="text-left mb-8 pb-8 border-b border-neutral-800">
-                        <h3 class="text-2xl font-bold mb-4">O que está incluso:</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3 text-neutral-300">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
-                                <span>O método passo a passo: Da mentalidade à criação de SaaS.</span>
+                        <h3 class="text-2xl font-bold mb-6 text-white">O que está incluso hoje:</h3>
+                        <ul class="space-y-5">
+                            <li class="flex items-start gap-4 text-neutral-300 bg-neutral-950 p-4 rounded-sm border border-neutral-800/50">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-blue-500 shrink-0"></i>
+                                <span><strong class="text-white">O método passo a passo:</strong> Da mentalidade à criação de SaaS.</span>
                             </li>
-                            <li class="flex items-start gap-3 text-neutral-300">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
-                                <span>Guia prático de Automações (n8n) e criação de Agentes Comerciais.</span>
+                            <li class="flex items-start gap-4 text-neutral-300 bg-neutral-950 p-4 rounded-sm border border-neutral-800/50">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-blue-500 shrink-0"></i>
+                                <span><strong class="text-white">Guia prático de Automações (n8n):</strong> E criação de Agentes Comerciais autônomos.</span>
                             </li>
-                            <li class="flex items-start gap-3 text-neutral-300">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
-                                <span>Estratégia comercial: Como empacotar e vender esses serviços para B2B.</span>
+                            <li class="flex items-start gap-4 text-neutral-300 bg-neutral-950 p-4 rounded-sm border border-neutral-800/50">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-blue-500 shrink-0"></i>
+                                <span><strong class="text-white">Estratégia comercial:</strong> Como empacotar e vender esses serviços de alto valor para B2B.</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- CTA Principal (Hotmart) -->
-                    <a href="https://go.hotmart.com/M104574073Y" class="block w-full bg-white text-black py-6 text-xl md:text-2xl font-black uppercase tracking-widest hover:bg-neutral-200 transition-colors mb-6">
+                    <a href="https://pay.hotmart.com/M104574073Y" target="_blank" class="block w-full bg-blue-600 text-white py-6 text-xl md:text-2xl font-black uppercase tracking-widest hover:bg-blue-700 glow-button hover:scale-[1.02] transition-all mb-6 rounded-sm">
                         COMPRAR AGORA E ACESSAR O EBOOK
                     </a>
 
                     <!-- Elementos de Confiança -->
                     <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-xs font-medium text-neutral-500 uppercase tracking-wider">
-                        <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4"></i> Ambiente 100% Seguro</span>
-                        <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4"></i> Acesso Imediato</span>
-                        <span class="flex items-center gap-2"><i data-lucide="award" class="w-4 h-4"></i> Garantia de 7 dias</span>
+                        <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-green-500"></i> Ambiente 100% Seguro</span>
+                        <span class="flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-yellow-500"></i> Acesso Imediato</span>
+                        <span class="flex items-center gap-2"><i data-lucide="award" class="w-4 h-4 text-blue-400"></i> Garantia de 7 dias</span>
                     </div>
                 </div>
             </div>
@@ -284,7 +292,7 @@
     <!-- Rodapé Minimalista -->
     <footer class="py-12 bg-neutral-950 text-center border-t border-neutral-900">
         <div class="container mx-auto px-6">
-            <p class="text-neutral-500 text-sm">
+            <p class="text-neutral-500 text-sm leading-relaxed">
                 &copy; <span id="year"></span> Gabriela Carvalho. Todos os direitos reservados.<br>
                 Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.
             </p>
@@ -292,9 +300,9 @@
     </footer>
 
     <!-- Botão Flutuante Mobile (Aparece apenas em telas pequenas para manter a conversão alta) -->
-    <div class="md:hidden fixed bottom-0 left-0 w-full p-4 bg-white/90 backdrop-blur-md border-t border-neutral-200 z-50">
-        <a href="#checkout" class="block w-full bg-black text-white py-4 text-center font-bold tracking-widest uppercase text-sm">
-            Garantir Meu eBook
+    <div class="md:hidden fixed bottom-0 left-0 w-full p-4 bg-white/95 backdrop-blur-md border-t border-neutral-200 z-50 shadow-[0_-10px_30px_rgba(0,0,0,0.1)]">
+        <a href="https://pay.hotmart.com/M104574073Y" target="_blank" class="flex items-center justify-center gap-2 w-full bg-blue-600 text-white py-4 text-center font-bold tracking-widest uppercase text-sm rounded-sm glow-button">
+            Garantir Meu eBook <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
     </div>
 
